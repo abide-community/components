@@ -10,6 +10,7 @@
   "scripts": {
     "dev": "docz dev -p 4000",
     "build": "NODE_ENV=production rollup -c",
+    "postbuild": "bundlesize -f 'dist/*.js'",
     "build:docs": "docz build"
   },
   "peerDependencies": {
@@ -22,6 +23,7 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.19",
+    "bundlesize": "^0.17.0",
     "docz": "^0.12.9",
     "eslint": "^5.8.0",
     "eslint-config-macklinu": "^1.0.0",
