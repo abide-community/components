@@ -8,10 +8,6 @@
 $ yarn add @abide-community/components
 ```
 
-## Usage
+## Docs
 
-```js
-import { Donorbox } from '@abide-community/components'
-```
-
-Documentation will be generated and hosted online once all components are complete. For now, you can clone the repo and run `yarn dev` to view the documentation site.
+Check out [the documentation site](https://abide-community-components.netlify.com/) for more info about how to use this UI library.
