@@ -8,7 +8,7 @@ export default function Donorbox({ name, height, ...props }) {
     script.type = 'text/javascript'
     document.body.appendChild(script)
     return () => document.body.removeChild(script)
-  })
+  }, [])
   return (
     <iframe
       src={`https://donorbox.org/embed/${name}`}
