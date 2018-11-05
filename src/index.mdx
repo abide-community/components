@@ -8,3 +8,17 @@ route: /
 Welcome to the documentation site for abide.community's UI library.
 
 👈 Check out the available components in the left-hand menu.
+
+## Quick Start
+
+```js
+import React from 'react'
+import { render } from 'react-dom'
+import { Provider } from '@abide-community/components'
+
+function App() {
+  return <Provider>{/* Your app components go here. */}</Provider>
+}
+
+render(<App />, document.getElementById('root'))
+```

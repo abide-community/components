@@ -47,5 +47,10 @@
       "prettier --write",
       "git add"
     ]
+  },
+  "dependencies": {
+    "rebass": "^2.3.4",
+    "styled-components": "^4.0.3",
+    "styled-system": "^3.1.11"
   }
 }
