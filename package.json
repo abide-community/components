@@ -9,7 +9,8 @@
   },
   "scripts": {
     "dev": "docz dev -p 4000",
-    "build": "NODE_ENV=production rollup -c"
+    "build": "NODE_ENV=production rollup -c",
+    "build:docs": "docz build"
   },
   "peerDependencies": {
     "react": ">=16.7.0-alpha.0"
