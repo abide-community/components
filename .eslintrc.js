@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['macklinu', 'macklinu/react'],
+  extends: ['macklinu', 'macklinu/react', 'macklinu/jest'],
 }
