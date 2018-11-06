@@ -6,6 +6,7 @@ export default function Donorbox({ name, height, ...props }) {
   useEffect(() => {
     script.src = 'https://donorbox.org/widget.js'
     script.type = 'text/javascript'
+    script.dataset.testId = 'donorbox-widget'
     document.body.appendChild(script)
     return () => document.body.removeChild(script)
   }, [])
