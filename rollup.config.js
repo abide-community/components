@@ -5,10 +5,15 @@ function defineOutput(output) {
   return {
     input: 'src/index.js',
     output: {
-      globals: { react: 'React', 'styled-components': 'styled' },
+      globals: {
+        react: 'React',
+        'styled-components': 'styled',
+        rebass: 'rebass',
+        '@rebass/components': 'system',
+      },
       ...output,
     },
-    external: ['react', 'styled-components'],
+    external: ['react', 'styled-components', 'rebass', '@rebass/components'],
     plugins: [resolve(), babel()],
   }
 }
