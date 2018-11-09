@@ -3892,10 +3892,10 @@ escodegen@^1.11.0, escodegen@^1.8.1, escodegen@^1.9.1:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-macklinu@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-macklinu/-/eslint-config-macklinu-1.1.0.tgz#bd491edca36307ec5b139edb2070cdffa043b8e7"
-  integrity sha512-wz7F/wqz0a4i3edWmpzyvHKqoeABBxSOJu4cFBG15JdqZPZr0rUjCi8SVD3T9f774hB8R3KOGWX69B32iJHBWA==
+eslint-config-macklinu@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-macklinu/-/eslint-config-macklinu-1.1.1.tgz#1386ecb45167fc49cdecc13b588348178af24bcc"
+  integrity sha512-/FQ2EDZy2a/GKc7zrADt0kE+Qfhm85+5vRwK24UtJweQtRNoFXfuGIp89mo/UJ4a0ZfNLbWhjEEX+5dGF/kNaw==
   dependencies:
     babel-eslint "^10.0.1"
     eslint-config-prettier "^3.1.0"
