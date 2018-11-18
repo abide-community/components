@@ -2,6 +2,7 @@
   "name": "@abide-community/components",
   "version": "0.0.0-development",
   "description": "React components used by the abide.community sites",
+  "license": "MIT",
   "main": "dist/index.umd.js",
   "module": "dist/index.esm.js",
   "publishConfig": {
