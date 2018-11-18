@@ -9,32 +9,34 @@
     "access": "public"
   },
   "scripts": {
-    "dev": "docz dev -p 4000",
+    "dev": "parcel docs/index.html -d public -p 4000",
     "build": "NODE_ENV=production rollup -c",
     "postbuild": "bundlesize -f 'dist/*.js'",
-    "build:docs": "docz build",
+    "docs": "parcel build docs/index.html -d public",
     "test": "jest"
   },
   "peerDependencies": {
     "react": ">=16.7.0-alpha.0"
   },
   "dependencies": {
+    "@mdx-js/tag": "^0.16.0",
     "@rebass/components": "^4.0.0-1",
     "rebass": "^2.3.4",
     "styled-components": "^4.0.3",
     "styled-system": "^3.1.11"
   },
   "devDependencies": {
+    "@abide-community/parcel-plugin-clean-out-dir": "^1.0.0",
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-export-default-from": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
+    "@mdx-js/parcel-plugin-mdx": "^0.16.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.19",
     "bundlesize": "^0.17.0",
-    "docz": "^0.12.9",
     "eslint": "^5.8.0",
     "eslint-config-macklinu": "^1.1.1",
     "husky": "^1.1.3",
@@ -42,10 +44,11 @@
     "jest-prop-type-error": "^1.1.0",
     "jest-styled-components": "^6.2.2",
     "lint-staged": "^8.0.4",
+    "parcel-bundler": "^1.10.3",
     "prettier": "^1.15.1",
     "prop-types": "^15.6.2",
-    "react": "^16.7.0-alpha.0",
-    "react-dom": "^16.7.0-alpha.0",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2",
     "react-testing-library": "^5.2.3",
     "regenerator-runtime": "^0.12.1",
     "rollup": "^0.67.0",
@@ -68,5 +71,8 @@
     "setupFiles": [
       "jest-prop-type-error"
     ]
+  },
+  "alias": {
+    "@abide-community/components": "./src"
   }
 }
