@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from 'react-testing-library'
 import Donorbox from './Donorbox'
 
-test('rendering a Donorbox works', async () => {
+test('rendering a Donorbox works', () => {
   const { container } = render(<Donorbox name="become" />)
   expect(container.firstChild).toMatchInlineSnapshot(`
 <iframe
