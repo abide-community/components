@@ -16,6 +16,4 @@ const Text = system({
 
 Text.propTypes = RebassText.propTypes
 
-console.log(Text.propTypes)
-
 export default Text
